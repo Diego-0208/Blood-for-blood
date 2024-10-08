@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 4849275755991532432}
   - component: {fileID: 1167470351567596506}
   - component: {fileID: 8243045846588195895}
-  - component: {fileID: -6839388817530239222}
   m_Layer: 0
   m_Name: Bullet
   m_TagString: Untagged
@@ -129,26 +128,8 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &-6839388817530239222
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7469226733029224761}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 25140dce9ff0a39438200025d56f36cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  searchedTag: Enemy
-  dealDmg: 10
-  destroyOnHit: 1
-  onHit:
-    m_PersistentCalls:
-      m_Calls: []
