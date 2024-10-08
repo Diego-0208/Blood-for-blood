@@ -206,8 +206,16 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -0.000000059604645
       objectReference: {fileID: 0}
+    - target: {fileID: 7011244937593730512, guid: e08dd13a66cc1314b94bc35c33215f68,
+        type: 3}
+      propertyPath: m_Mass
+      value: 1000000
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6654581457690879298, guid: e08dd13a66cc1314b94bc35c33215f68, type: 3}
+    - {fileID: 3500464704894030846, guid: e08dd13a66cc1314b94bc35c33215f68, type: 3}
+    - {fileID: 5934213150045669829, guid: e08dd13a66cc1314b94bc35c33215f68, type: 3}
+    - {fileID: 916221579761553502, guid: e08dd13a66cc1314b94bc35c33215f68, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -215,6 +223,14 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 885242387}
+    - targetCorrespondingSourceObject: {fileID: 9147612985149023242, guid: e08dd13a66cc1314b94bc35c33215f68,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 885242389}
+    - targetCorrespondingSourceObject: {fileID: 9147612985149023242, guid: e08dd13a66cc1314b94bc35c33215f68,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 885242388}
   m_SourcePrefab: {fileID: 100100000, guid: e08dd13a66cc1314b94bc35c33215f68, type: 3}
 --- !u!1 &326585968
 GameObject:
@@ -538,6 +554,45 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   virtualCamera: {fileID: 326585969}
   mouseSensitivity: 2
+--- !u!143 &885242388
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 885242385}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Height: 2
+  m_Radius: 0.5
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &885242389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 885242385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb9ec23dc95178f409a685ba5dc65782, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 8
 --- !u!1 &1187686613
 GameObject:
   m_ObjectHideFlags: 0
@@ -548,7 +603,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1187686616}
   - component: {fileID: 1187686615}
-  - component: {fileID: 1187686614}
   - component: {fileID: 1187686617}
   m_Layer: 0
   m_Name: Main Camera
@@ -557,14 +611,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &1187686614
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1187686613}
-  m_Enabled: 1
 --- !u!20 &1187686615
 Camera:
   m_ObjectHideFlags: 0
