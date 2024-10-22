@@ -30,12 +30,12 @@ public class PlayerMovement : MonoBehaviour
         if (hitColliders.Length > 0)
         {
             // Interactuar con el primer NPC detectado
-            Debug.Log("Interacción con NPC: " + hitColliders[0].gameObject.name);
+            //Debug.Log("Interacción con NPC: " + hitColliders[0].gameObject.name);
             // Aquí puedes agregar la lógica específica de la interacción (por ejemplo, abrir un diálogo)
         }
         else
         {
-            Debug.Log("No hay NPCs cerca para interactuar.");
+            //Debug.Log("No hay NPCs cerca para interactuar.");
         }
     }
 

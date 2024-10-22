@@ -18,6 +18,12 @@ public class NPCDialogue : MonoBehaviour
 
     private void Update()
     {
+        // Cerrar el diálogo si se presiona la tecla 'E' de nuevo
+        if (dialoguePanel.activeSelf && Input.GetKeyDown(KeyCode.E))
+        {
+            dialoguePanel.SetActive(false); // Desactiva el panel
+        }
+
         // Verificar si el jugador está dentro del rango y presiona la tecla 'E'
         if (isPlayerInRange && Input.GetKeyDown(KeyCode.E))
         {
@@ -33,11 +39,7 @@ public class NPCDialogue : MonoBehaviour
             }
         }
 
-        // Cerrar el diálogo si se presiona la tecla 'E' de nuevo
-        if (dialoguePanel.activeSelf && Input.GetKeyDown(KeyCode.E))
-        {
-            dialoguePanel.SetActive(false); // Desactiva el panel
-        }
+        
     }
 
     private void OnTriggerEnter(Collider other)
