@@ -298,7 +298,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: "buenas \n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -566,7 +566,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: f5d91810f63dced41a59e31ad6e61519,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.0299999
+      value: -0.84
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f5d91810f63dced41a59e31ad6e61519,
         type: 3}
@@ -1223,7 +1223,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1039482782
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1594,7 +1594,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1233694246
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1849,10 +1849,10 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.19183064
+  m_Radius: 0.8033807
   m_Height: 1.7635053
   m_Direction: 1
-  m_Center: {x: 0, y: 0.91628236, z: -0.027844667}
+  m_Center: {x: -0.040030543, y: 0.91628236, z: -0.02784467}
 --- !u!114 &1611685752
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1866,6 +1866,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueText: buenas
+  dialoguePanel: {fileID: 1039482781}
+  dialogueTextMesh: {fileID: 97102574}
 --- !u!1 &2077774607
 GameObject:
   m_ObjectHideFlags: 0

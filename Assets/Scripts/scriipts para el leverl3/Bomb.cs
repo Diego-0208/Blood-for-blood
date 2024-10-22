@@ -7,6 +7,7 @@ public class Bomb : MonoBehaviour
 {
     public float defuseTime = 5f; // Tiempo para desactivar la bomba
     public float explosionTime = 30f; // Tiempo antes de que la bomba explote
+    public float explosionSoundLength = 1f; // Tiempo antes de que la bomba explote
     private bool isDefused = false; // Estado de la bomba
     private bool isDefusing = false; // Para verificar si se está desactivando
 
@@ -66,6 +67,8 @@ public class Bomb : MonoBehaviour
         {
             Explode();
         }
+        yield return new WaitForSeconds(explosionSoundLength);
+        EndGame(false); // Finaliza el juego con la explosión
     }
 
     // Método para actualizar el temporizador en pantalla
@@ -94,7 +97,7 @@ public class Bomb : MonoBehaviour
         explosionSound.Play();
 
         // Aquí puedes añadir otros efectos visuales si lo deseas
-        EndGame(false); // Finaliza el juego con la explosión
+        
     }
 
     // Método para finalizar el juego

@@ -151,7 +151,7 @@ RectTransform:
   m_GameObject: {fileID: 158880973}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalScale: {x: 1.47329, y: 2.1746, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1641653809}
@@ -573,12 +573,12 @@ MonoBehaviour:
   m_RequiresColorTexture: 0
   m_Version: 2
   m_TaaSettings:
-    m_Quality: 3
-    m_FrameInfluence: 0.1
-    m_JitterScale: 1
-    m_MipBias: 0
-    m_VarianceClampScale: 0.9
-    m_ContrastAdaptiveSharpening: 0
+    quality: 3
+    frameInfluence: 0.1
+    jitterScale: 1
+    mipBias: 0
+    varianceClampScale: 0.9
+    contrastAdaptiveSharpening: 0
 --- !u!1 &1568695204
 GameObject:
   m_ObjectHideFlags: 0
@@ -607,7 +607,7 @@ RectTransform:
   m_GameObject: {fileID: 1568695204}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalScale: {x: 1.47329, y: 2.1746, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1693041754}
@@ -1236,7 +1236,7 @@ RectTransform:
   m_GameObject: {fileID: 2017997579}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalScale: {x: 1.47329, y: 2.1746, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2140294599}
@@ -1323,8 +1323,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 6682164d41d22f94daf22bd10b71ee13, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
